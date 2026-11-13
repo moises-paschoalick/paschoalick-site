@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>paschoalick — mascote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:#0a0a0a;color:#fff}
+.topbar{position:sticky;top:0;z-index:10;background:#000;color:#fff;padding:12px 24px;display:flex;gap:12px;align-items:center;font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;border-bottom:1px solid #262626}
+.topbar a{color:#fff;text-decoration:none}
+.topbar span{color:#a3a3a3;font-weight:400;font-family:'JetBrains Mono',monospace;font-size:13px}
+.stage{display:flex;justify-content:center;padding:32px 24px;overflow-x:auto}
+.stage>div{flex:0 0 auto}
+body{margin:0}
+@keyframes mb{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes mbl{0%,90%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes mgl{0%,100%{opacity:.16}50%{opacity:.34}}
+@keyframes mgls{0%,100%{opacity:.04}50%{opacity:.1}}
+.m-bob{animation:mb 3s ease-in-out infinite}
+.m-eye{transform-box:fill-box;transform-origin:center;animation:mbl 4.5s ease-in-out infinite}
+.m-glow{animation:mgl 3.4s ease-in-out infinite}
+.m-glow-s{animation:mgls 3.4s ease-in-out infinite}
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← paschoalick</a><span>mascote · esquadrão</span></div>
+<div class="stage">
+<div style="width: 1320px; height: 1060px; background: #000000; font-family: Inter, system-ui, sans-serif; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 100px 480px 480px; box-sizing: border-box">
+
+<div style="grid-column: span 3; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; border-bottom: 1px solid #262626">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -0.03em; color: #ffffff">Esquadrão — 6 mascotes, 6 cores</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #a3a3a3">um por agent · com degradê e animação</span>
+</div>
+
+<!-- A · Tela · Teal -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border-right: 1px solid #262626; border-bottom: 1px solid #262626">
+<svg width="300" height="330" viewBox="0 0 300 320" role="img" aria-label="Mascote A, tela, teal">
+<defs>
+<radialGradient id="glowA"><stop offset="0" stop-color="#3ECFB0" stop-opacity="1"/><stop offset="1" stop-color="#3ECFB0" stop-opacity="0"/></radialGradient>
+<linearGradient id="gA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5FE0C4"/><stop offset="1" stop-color="#2A9D8F"/></linearGradient>
+</defs>
+<ellipse class="m-glow" cx="150" cy="150" rx="128" ry="135" fill="url(#glowA)" style="animation-delay:0s"/>
+<g class="m-bob" style="animation-delay:0s"><g transform="translate(-10,-20) scale(.8)">
+<path d="M106 150 V112 Q106 56 200 56 Q294 56 294 112 V150" fill="none" stroke="#1f7d72" stroke-width="12" stroke-linecap="round"/>
+<rect x="162" y="350" width="30" height="24" rx="10" fill="#238f82"/>
+<rect x="208" y="350" width="30" height="24" rx="10" fill="#238f82"/>
+<path d="M152 292 Q122 306 110 328" fill="none" stroke="#37C2A4" stroke-width="18" stroke-linecap="round"/>
+<path d="M248 290 Q282 300 300 282" fill="none" stroke="#37C2A4" stroke-width="18" stroke-linecap="round"/>
+<rect x="184" y="232" width="32" height="36" rx="8" fill="#238f82"/>
+<rect x="148" y="260" width="104" height="98" rx="26" fill="url(#gA)"/>
+<rect x="170" y="282" width="60" height="36" rx="9" fill="#0f2a27"/>
+<rect x="179" y="292" width="42" height="5" rx="2.5" fill="#5FE0C4" opacity=".7"/>
+<rect x="179" y="303" width="28" height="5" rx="2.5" fill="#5FE0C4" opacity=".45"/>
+<rect x="112" y="82" width="176" height="158" rx="36" fill="url(#gA)"/>
+<rect x="130" y="108" width="140" height="104" rx="22" fill="#0f2a27"/>
+<rect x="90" y="132" width="30" height="58" rx="12" fill="#238f82"/>
+<rect x="280" y="132" width="30" height="58" rx="12" fill="#238f82"/>
+<g class="m-eye" style="animation-delay:0s"><circle cx="172" cy="156" r="13" fill="#ffffff"/><circle cx="228" cy="156" r="13" fill="#ffffff"/></g>
+<circle cx="110" cy="328" r="12" fill="#238f82"/>
+<circle cx="300" cy="282" r="12" fill="#238f82"/>
+</g></g>
+</svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600; color: #ffffff">A · Tela</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #3ECFB0">Teal · #3ECFB0</span>
+</div>
+
+<!-- B · Pixel · Violeta -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border-right: 1px solid #262626; border-bottom: 1px solid #262626">
+<svg width="300" height="330" viewBox="0 0 300 320" role="img" aria-label="Mascote B, pixel, violeta" shape-rendering="crispEdges">
+<defs>
+<radialGradient id="glowB"><stop offset="0" stop-color="#A78BFA" stop-opacity="1"/><stop offset=".5" stop-color="#A78BFA" stop-opacity=".45"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+<linearGradient id="gB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C4B5FD"/><stop offset="1" stop-color="#7C3AED"/></linearGradient>
+</defs>
+<ellipse class="m-glow-s" cx="150" cy="150" rx="134" ry="140" fill="url(#glowB)" style="animation-delay:-.6s"/>
+<g class="m-bob" style="animation-delay:-.5s">
+<rect x="70" y="40" width="160" height="10" fill="#5b21b6"/>
+<rect x="60" y="50" width="10" height="40" fill="#5b21b6"/>
+<rect x="230" y="50" width="10" height="40" fill="#5b21b6"/>
+<rect x="80" y="60" width="140" height="120" fill="url(#gB)"/>
+<rect x="70" y="70" width="160" height="100" fill="url(#gB)"/>
+<rect x="50" y="90" width="20" height="50" fill="#6D28D9"/>
+<rect x="230" y="90" width="20" height="50" fill="#6D28D9"/>
+<g class="m-eye" style="animation-delay:-.5s"><rect x="110" y="100" width="20" height="30" fill="#ffffff"/><rect x="170" y="100" width="20" height="30" fill="#ffffff"/></g>
+<rect x="140" y="150" width="20" height="10" fill="#1e1340"/>
+<rect x="130" y="180" width="40" height="10" fill="#6D28D9"/>
+<rect x="100" y="190" width="100" height="70" fill="url(#gB)"/>
+<rect x="120" y="210" width="60" height="20" fill="#1e1340"/>
+<rect x="130" y="215" width="10" height="10" fill="#C4B5FD"/>
+<rect x="150" y="215" width="20" height="10" fill="#6D28D9"/>
+<rect x="80" y="200" width="20" height="40" fill="url(#gB)"/>
+<rect x="80" y="240" width="20" height="10" fill="#6D28D9"/>
+<rect x="200" y="200" width="30" height="10" fill="url(#gB)"/>
+<rect x="220" y="170" width="10" height="30" fill="url(#gB)"/>
+<rect x="220" y="160" width="20" height="10" fill="#6D28D9"/>
+<rect x="110" y="260" width="30" height="20" fill="#6D28D9"/>
+<rect x="160" y="260" width="30" height="20" fill="#6D28D9"/>
+</g>
+</svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600; color: #ffffff">B · Pixel</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #A78BFA">Violeta · #A78BFA</span>
+</div>
+
+<!-- C · Monitor · Âmbar -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border-bottom: 1px solid #262626">
+<svg width="300" height="330" viewBox="0 0 300 320" role="img" aria-label="Mascote C, monitor, âmbar">
+<defs>
+<radialGradient id="glowC"><stop offset="0" stop-color="#FBBF24" stop-opacity="1"/><stop offset=".5" stop-color="#FBBF24" stop-opacity=".45"/><stop offset="1" stop-color="#FBBF24" stop-opacity="0"/></radialGradient>
+<linearGradient id="gC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCD34D"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
+</defs>
+<ellipse class="m-glow-s" cx="150" cy="140" rx="134" ry="136" fill="url(#glowC)" style="animation-delay:-1.1s"/>
+<g class="m-bob" style="animation-delay:-1s">
+<line x1="150" y1="58" x2="150" y2="36" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+<circle cx="150" cy="30" r="8" fill="#FCD34D"/>
+<rect x="110" y="268" width="30" height="18" rx="8" fill="#D97706"/>
+<rect x="160" y="268" width="30" height="18" rx="8" fill="#D97706"/>
+<path d="M99 226 Q74 238 68 256" fill="none" stroke="#F59E0B" stroke-width="14" stroke-linecap="round"/>
+<path d="M201 226 Q226 238 232 256" fill="none" stroke="#F59E0B" stroke-width="14" stroke-linecap="round"/>
+<circle cx="68" cy="256" r="9" fill="#D97706"/>
+<circle cx="232" cy="256" r="9" fill="#D97706"/>
+<rect x="135" y="184" width="30" height="24" fill="#D97706"/>
+<rect x="95" y="204" width="110" height="70" rx="20" fill="url(#gC)"/>
+<rect x="115" y="222" width="70" height="8" rx="4" fill="#3a2807"/>
+<rect x="115" y="238" width="44" height="8" rx="4" fill="#3a2807"/>
+<rect x="50" y="58" width="200" height="130" rx="18" fill="url(#gC)"/>
+<rect x="66" y="74" width="168" height="98" rx="10" fill="#3a2807"/>
+<g class="m-eye" style="animation-delay:-1s"><circle cx="118" cy="114" r="11" fill="#ffffff"/><circle cx="182" cy="114" r="11" fill="#ffffff"/></g>
+<rect x="136" y="144" width="28" height="6" rx="3" fill="#FCD34D"/>
+</g>
+</svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600; color: #ffffff">C · Monitor</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #FBBF24">Âmbar · #FBBF24</span>
+</div>
+
+<!-- D · Bloco · Coral -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border-right: 1px solid #262626">
+<svg width="300" height="330" viewBox="0 0 300 320" role="img" aria-label="Mascote D, bloco, coral">
+<defs>
+<radialGradient id="glowD"><stop offset="0" stop-color="#FB7185" stop-opacity="1"/><stop offset=".5" stop-color="#FB7185" stop-opacity=".45"/><stop offset="1" stop-color="#FB7185" stop-opacity="0"/></radialGradient>
+<linearGradient id="gD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDA4AF"/><stop offset="1" stop-color="#E11D48"/></linearGradient>
+</defs>
+<ellipse class="m-glow-s" cx="150" cy="150" rx="134" ry="136" fill="url(#glowD)" style="animation-delay:-1.6s"/>
+<g class="m-bob" style="animation-delay:-1.5s">
+<path d="M72 150 V110 Q72 60 150 60 Q228 60 228 110 V150" fill="none" stroke="#9f1239" stroke-width="10" stroke-linecap="round"/>
+<rect x="108" y="230" width="26" height="44" rx="12" fill="#BE123C"/>
+<rect x="166" y="230" width="26" height="44" rx="12" fill="#BE123C"/>
+<path d="M76 192 Q56 204 54 224" fill="none" stroke="#F43F5E" stroke-width="14" stroke-linecap="round"/>
+<path d="M224 190 Q250 186 256 162" fill="none" stroke="#F43F5E" stroke-width="14" stroke-linecap="round"/>
+<circle cx="54" cy="224" r="9" fill="#BE123C"/>
+<circle cx="256" cy="162" r="9" fill="#BE123C"/>
+<rect x="70" y="80" width="160" height="160" rx="44" fill="url(#gD)"/>
+<rect x="54" y="126" width="26" height="52" rx="11" fill="#BE123C"/>
+<rect x="220" y="126" width="26" height="52" rx="11" fill="#BE123C"/>
+<g class="m-eye" style="animation-delay:-1.5s"><circle cx="124" cy="146" r="13" fill="#ffffff"/><circle cx="176" cy="146" r="13" fill="#ffffff"/></g>
+<rect x="132" y="200" width="36" height="8" rx="4" fill="#3f0a18"/>
+</g>
+</svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600; color: #ffffff">D · Bloco</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #FB7185">Coral · #FB7185</span>
+</div>
+
+<!-- E · Visor · Azul -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border-right: 1px solid #262626">
+<svg width="300" height="330" viewBox="0 0 300 320" role="img" aria-label="Mascote E, visor, azul">
+<defs>
+<radialGradient id="glowE"><stop offset="0" stop-color="#60A5FA" stop-opacity="1"/><stop offset=".5" stop-color="#60A5FA" stop-opacity=".45"/><stop offset="1" stop-color="#60A5FA" stop-opacity="0"/></radialGradient>
+<linearGradient id="gE" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#93C5FD"/><stop offset="1" stop-color="#2563EB"/></linearGradient>
+</defs>
+<ellipse class="m-glow-s" cx="150" cy="150" rx="134" ry="136" fill="url(#glowE)" style="animation-delay:-2.1s"/>
+<g class="m-bob" style="animation-delay:-2s">
+<line x1="200" y1="68" x2="208" y2="44" stroke="#1e40af" stroke-width="6" stroke-linecap="round"/>
+<circle cx="209" cy="38" r="7" fill="#93C5FD"/>
+<rect x="110" y="272" width="30" height="18" rx="8" fill="#1D4ED8"/>
+<rect x="160" y="272" width="30" height="18" rx="8" fill="#1D4ED8"/>
+<path d="M104 234 Q80 246 74 264" fill="none" stroke="#3B82F6" stroke-width="14" stroke-linecap="round"/>
+<path d="M196 234 Q220 246 226 264" fill="none" stroke="#3B82F6" stroke-width="14" stroke-linecap="round"/>
+<circle cx="74" cy="264" r="9" fill="#1D4ED8"/>
+<circle cx="226" cy="264" r="9" fill="#1D4ED8"/>
+<rect x="135" y="198" width="30" height="22" fill="#1D4ED8"/>
+<rect x="100" y="214" width="100" height="66" rx="22" fill="url(#gE)"/>
+<circle cx="150" cy="246" r="13" fill="#0a1c3f"/>
+<circle cx="150" cy="246" r="5" fill="#93C5FD"/>
+<rect x="44" y="112" width="18" height="44" rx="6" fill="#1D4ED8"/>
+<rect x="238" y="112" width="18" height="44" rx="6" fill="#1D4ED8"/>
+<rect x="58" y="66" width="184" height="136" rx="30" fill="url(#gE)"/>
+<rect x="74" y="104" width="152" height="52" rx="26" fill="#0a1c3f"/>
+<g class="m-eye" style="animation-delay:-2s"><circle cx="118" cy="130" r="10" fill="#ffffff"/><circle cx="182" cy="130" r="10" fill="#ffffff"/></g>
+<rect x="134" y="170" width="6" height="14" rx="3" fill="#1D4ED8"/>
+<rect x="147" y="170" width="6" height="14" rx="3" fill="#1D4ED8"/>
+<rect x="160" y="170" width="6" height="14" rx="3" fill="#1D4ED8"/>
+</g>
+</svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600; color: #ffffff">E · Visor</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #60A5FA">Azul · #60A5FA</span>
+</div>
+
+<!-- F · Cápsula · Verde -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+<svg width="300" height="330" viewBox="0 0 300 320" role="img" aria-label="Mascote F, cápsula, verde">
+<defs>
+<radialGradient id="glowF"><stop offset="0" stop-color="#4ADE80" stop-opacity="1"/><stop offset=".5" stop-color="#4ADE80" stop-opacity=".45"/><stop offset="1" stop-color="#4ADE80" stop-opacity="0"/></radialGradient>
+<linearGradient id="gF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#86EFAC"/><stop offset="1" stop-color="#16A34A"/></linearGradient>
+</defs>
+<ellipse class="m-glow-s" cx="150" cy="150" rx="134" ry="140" fill="url(#glowF)" style="animation-delay:-2.6s"/>
+<ellipse cx="150" cy="300" rx="40" ry="5" fill="#4ADE80" opacity=".2"/>
+<g class="m-bob" style="animation-delay:-2.5s">
+<rect x="132" y="270" width="8" height="14" rx="4" fill="#86EFAC" opacity=".6"/>
+<rect x="160" y="270" width="8" height="14" rx="4" fill="#86EFAC" opacity=".6"/>
+<path d="M82 140 V104 Q82 50 150 50 Q218 50 218 104 V140" fill="none" stroke="#166534" stroke-width="10" stroke-linecap="round"/>
+<rect x="80" y="66" width="140" height="196" rx="50" fill="url(#gF)"/>
+<rect x="96" y="90" width="108" height="84" rx="22" fill="#07260f"/>
+<rect x="64" y="108" width="24" height="50" rx="10" fill="#15803D"/>
+<rect x="212" y="108" width="24" height="50" rx="10" fill="#15803D"/>
+<g class="m-eye" style="animation-delay:-2.5s"><circle cx="128" cy="126" r="11" fill="#ffffff"/><circle cx="172" cy="126" r="11" fill="#ffffff"/></g>
+<path d="M140 150 Q150 158 160 150" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+<rect x="126" y="200" width="48" height="6" rx="3" fill="#15803D"/>
+<rect x="134" y="214" width="32" height="6" rx="3" fill="#15803D"/>
+<circle cx="52" cy="214" r="13" fill="#16A34A"/>
+<circle cx="248" cy="196" r="13" fill="#16A34A"/>
+</g>
+</svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600; color: #ffffff">F · Cápsula</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4ADE80">Verde · #4ADE80</span>
+</div>
+
+</div>
+</div>
+</body>
+</html>
